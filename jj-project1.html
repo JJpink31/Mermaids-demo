@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mermaids</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to top, #09203f 40%, #537895 100%);
+    }
+    h1 {
+      text-align: center;
+      font-family: cursive;
+      font-size: 85px;
+      font-weight: 500;
+      color: #74e2f3;
+      text-decoration: underline;
+    }
+    h2 {
+      text-align: center;
+      font-family: cursive;
+      font-weight: 800;
+      color: rgba(186, 197, 207, 0.917);
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 400px;
+      border: solid;
+      border-color: rgba(240, 248, 255);
+      border-width: 5px;
+      border-radius: 10px;
+      box-shadow: 10px 15px 30px rgb(9, 33, 54);
+    }
+
+    .the-artist {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+      color: rgba(186, 197, 207, 0.8);
+      transition: all 100ms ease-in-out;
+    }
+    .the-artist:hover {
+      color: #74e2f3;
+    }
+
+    .more-info {
+      display: block;
+      text-align: center;
+      color: rgba(186, 197, 207, 0.9);
+      margin: 20px 15px;
+      transition: all 100ms ease-in-out;
+    }
+    .more-info:hover {
+      color: #74e2f3;
+    }
+
+    h3 {
+      text-align: center;
+      color: #3ec7dc;
+      margin-top: 30px;
+      font-family: cursive;
+      font-size: 28px;
+      margin-top: 50px;
+    }
+    p {
+      text-align: center;
+      color: #3ec7dc;
+      line-height: 1.5;
+      font-family: Georgia;
+      font-size: 20;
+      font-weight: 200;
+      margin-bottom: 50px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 15px 20px;
+      border: 1px solid #74e2f3;
+      border-radius: 50%;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 22px;
+      font-style: italic;
+      color: #093062;
+      box-shadow: 10px 10px 10px rgb(9, 33, 54);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      cursor: pointer;
+      color: aliceblue;
+      background: transparent;
+    }
+    .creator {
+      text-align: center;
+      color: rgba(150, 169, 186, 0.74);
+      font-family: Georgia;
+      font-weight: 200;
+      font-size: 8;
+      margin: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1><em>Mermaids</em></h1>
+      <h2>Water's Mythical Creatures</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/149/original/heart_of_a_mermaid_by_merkerinn_db0txi7-fullview.jpg?1675117112"
+        <br
+      />
+      <div>
+        <a
+          href="https://www.deviantart.com/merkerinn/art/Heart-of-a-mermaid-666524383"
+          target="_blank"
+          alt="mermaid art"
+          class="the-artist"
+          >Art is made by Merkininn
+        </a>
+      </div>
+      <h3>First, What are Mermaids?</h3>
+      <p>
+        In folklore, a mermaid is an aquatic creature with the head and upper
+        body of a female human and the tail of a fish. Mermaids appear in the
+        folklore of many cultures worldwide, including Europe, Asia, and Africa.
+        Mermaids are sometimes associated with perilous events such as floods,
+        storms, shipwrecks, and drownings.
+      </p>
+      <span
+        ><a
+          href="https://en.wikipedia.org/wiki/Mermaid"
+          target="_blank"
+          class="more-info"
+          >To learn more on Mermaids ↞
+        </a></span
+      >
+      <br />
+      <button>Click for More</button>
+      <div class="creator">Page Created by Jordanka</div>
+    </div>
+    <script>
+      function subscription() {
+        let name = prompt("What is your name?");
+        let subscribing = prompt(
+          "Would you like to subscribe to our monthly magazine " +
+            name +
+            "? Please answer yes or no"
+        );
+        if (subscribing.toLowerCase() === "yes") {
+          alert(
+            "Thank you for Subscribing " +
+              name +
+              ". You won't be disappointed! 😊"
+          );
+        } else {
+          alert("That's ok " + name + ". We understand 😖");
+        }
+      }
+
+      let button = document.querySelector(" button ");
+      button.addEventListener("click", subscription);
+    </script>
+  </body>
+</html>
